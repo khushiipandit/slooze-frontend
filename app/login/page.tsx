@@ -145,12 +145,10 @@ export default function LoginPage() {
         </button>
         </form>
 
-        <div className={`mt-6 text-xs text-center drop-shadow-sm ${
-          theme === "light" ? "text-slate-700" : "text-slate-200"
-        }`}>
-          <span className={`font-semibold ${theme === "light" ? "text-slate-800" : "text-slate-100"}`}>Demo Credentials:</span><br />
-          <span className={theme === "light" ? "text-slate-700" : "text-slate-100"}>Manager → manager@slooze.com / 123456</span><br />
-          <span className={theme === "light" ? "text-slate-700" : "text-slate-100"}>Store → store@slooze.com / 123456</span>
+        <div className="mt-6 text-xs text-slate-200 text-center drop-shadow-sm">
+          <span className="font-semibold text-slate-100">Demo Credentials:</span><br />
+          <span className="text-slate-100">Manager → manager@slooze.com / 123456</span><br />
+          <span className="text-slate-100">Store → store@slooze.com / 123456</span>
         </div>
       </div>
     </div>
