@@ -87,7 +87,7 @@ export default function LoginPage() {
   return (
     <div className={`min-h-screen flex items-center justify-center relative overflow-hidden ${
       theme === "light"
-        ? "bg-gradient-to-br from-[#eaf2ff] via-[#f4f8ff] to-[#dfeeff]"
+        ? "bg-gradient-to-br from-[#dbeafe] via-[#e0f2ff] to-[#d9e8ff]"
         : "bg-slate-950"
     }`}>
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none opacity-70 mix-blend-screen" />
@@ -145,10 +145,12 @@ export default function LoginPage() {
         </button>
         </form>
 
-        <div className="mt-6 text-xs text-slate-200 text-center drop-shadow-sm">
-          <span className="font-semibold text-slate-100">Demo Credentials:</span><br />
-          <span className="text-slate-100">Manager → manager@slooze.com / 123456</span><br />
-          <span className="text-slate-100">Store → store@slooze.com / 123456</span>
+        <div className={`mt-6 text-xs text-center drop-shadow-sm ${
+          theme === "light" ? "text-black" : "text-slate-200"
+        }`}>
+          <span className={`font-semibold ${theme === "light" ? "text-black" : "text-slate-100"}`}>Demo Credentials:</span><br />
+          <span className={theme === "light" ? "text-black" : "text-slate-100"}>Manager → manager@slooze.com / 123456</span><br />
+          <span className={theme === "light" ? "text-black" : "text-slate-100"}>Store → store@slooze.com / 123456</span>
         </div>
       </div>
     </div>
